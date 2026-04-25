@@ -22,7 +22,7 @@
             <th>Ações</th>
         </tr>
 
-        <%-- Removi o requestScope. pois o JSTL já procura no request automaticamente --%>
+
         <c:forEach var="editora" items="${listaEditoras}">
             <tr>
                 <td>${editora.id}</td>

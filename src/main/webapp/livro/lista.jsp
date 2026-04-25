@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
 <title>Livraria Virtual</title>
@@ -34,7 +35,7 @@
 					<td>${livro.editora.nome}</td>
 					<td>${livro.autor}</td>
 					<td>${livro.ano}</td>
-					<td>${livro.preco}</td>
+					<td><fmt:formatNumber value="${livro.preco}" type="currency" /></td>
 					<td><a href="/${requestScope.contextPath}/livros/edicao?id=${livro.id}">Edição</a>
 						&nbsp;&nbsp;&nbsp;&nbsp; <a
 						href="/${requestScope.contextPath}/livros/remocao?id=${livro.id}"

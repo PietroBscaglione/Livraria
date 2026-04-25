@@ -4,7 +4,6 @@ import java.sql.*;
 import java.util.*;
 import br.ufscar.dc.dsw.domain.Editora;
 
-// 1. HERDE de GenericDAO para usar a conexão que já funciona
 public class EditoraDAO extends GenericDAO {
 
     public List<Editora> getAll() {
